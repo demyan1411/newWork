@@ -1,0 +1,23 @@
+.footer {
+  min-width: 990px;
+  margin-top: -59px;
+  height: 59px;
+  background: #de5b4e;
+  box-sizing: border-box;
+  padding-top: 20px;
+  font-family: "TrebuchetMS";
+  color: #f6f4eb;
+  position: relative;
+  z-index: 10; }
+  .footer__text {
+    font-size: 16px;
+    line-height: 19px;
+    float: left; }
+  .footer__mail {
+    font-size: 14px;
+    line-height: 17px;
+    float: right;
+    padding-left: 23px;
+    display: inline-block;
+    vertical-align: top;
+    background: url(../img/mail.png) 0 3px no-repeat; }

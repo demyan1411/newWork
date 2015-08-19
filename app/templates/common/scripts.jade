@@ -1,0 +1,18 @@
+// build:js js/vendor.min.js
+// bower:js
+script(src='/bower/jquery/jquery.js')
+script(src='/bower/jquery-mousewheel/jquery.mousewheel.js')
+script(src='/bower/fancybox/source/jquery.fancybox.js')
+// endbower
+// endbuild
+
+// build:js js/main.min.js
+script(src='js/modules.js')
+script(src='js/main.js')
+// endbuild
+
+// build:js js/iePlaceholder.min.js
+<!--[if lte IE 9]>
+script(src='js/iePlaceholder.js')
+<![endif]-->
+// endbuild

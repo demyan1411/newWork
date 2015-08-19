@@ -1,0 +1,14 @@
+include ../common/_mixins
+
+doctype html
+html(lang='ru-RU')
+	include ../common/head.jade
+	body
+		.main-content
+			.main-content__wrapper
+				include ../common/header.jade
+				block content
+
+
+		include ../common/footer.jade
+		include ../common/scripts.jade

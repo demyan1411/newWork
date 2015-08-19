@@ -1,0 +1,108 @@
+@import "mixins";
+.content {
+	position: relative;
+
+	&__img {
+		//background: url(../img/bg1.png) 0 0 no-repeat;
+		max-width: 738px;
+		// height: 743px;
+		position: absolute;
+		bottom: -180px;
+		z-index: 1;
+		left: 50%;
+		margin-left: -396px;
+
+	}
+}
+.h1 {
+	text-align: center;
+	@include inlineBlock;
+	margin-bottom: 25px;
+
+	&__minText {
+		font-family: $fontTreb;
+		color: #9d9d9d;
+		font-weight: 500;
+	}
+
+	&__bigText {
+		font-family: $fontTrebBold;
+		font-size: 82px;
+		line-height: 78px;
+	}
+}
+.redMenu {
+	text-align: center;
+	margin-bottom: 30px;
+
+	&__item {
+		@include inlineBlock;
+		padding: 0 15px;
+	}
+
+	&__link {
+		font-family: $fontTreb;
+		font-size: 18px;
+		line-height: 21px;
+		color: #f65b4f;
+		display: block;
+		padding-bottom: 2px;
+		border-bottom: 1px solid #f6bdb3;
+
+		&:hover {
+			border-bottom: 1px solid transparent;
+		}
+	}
+}
+.column_left {
+	float: left;
+	width: 255px;
+	margin-bottom: 20px;
+}
+.column_right {
+	float: right;
+	width: 245px;
+}
+.text-info {
+	margin-bottom: 25px;
+	position: relative;
+	z-index: 2;
+
+	&__title {
+		font-family: $fontBold;
+		margin-bottom: 15px;
+	}
+
+	&__text {
+		margin-bottom: 15px;
+
+		&_min {
+			width: 190px;
+			margin-top: -70px;
+		}
+	}
+
+	&__img {
+		margin-left: -91px;
+	}
+
+	&__link {
+		color: #008de5;
+		display: inline-block;
+		margin-top: 1px;
+		border-bottom: 1px solid #008de5;
+		&:hover {
+			border-bottom: 1px solid transparent;
+		}
+	}
+}
+@media screen and (max-width:1255px) {
+	.content__img {
+		max-width: 515px;
+		bottom: 25px;
+		margin-left: -276px;
+	}
+	.wrapp {
+		padding: 0 5px;
+	}
+}

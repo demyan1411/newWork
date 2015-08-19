@@ -1,0 +1,80 @@
+.content {
+  position: relative; }
+  .content__img {
+    max-width: 738px;
+    position: absolute;
+    bottom: -180px;
+    z-index: 1;
+    left: 50%;
+    margin-left: -396px; }
+
+.h1 {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 25px; }
+  .h1__minText {
+    font-family: "TrebuchetMS";
+    color: #9d9d9d;
+    font-weight: 500; }
+  .h1__bigText {
+    font-family: "TrebuchetMS-Bold";
+    font-size: 82px;
+    line-height: 78px; }
+
+.redMenu {
+  text-align: center;
+  margin-bottom: 30px; }
+  .redMenu__item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 15px; }
+  .redMenu__link {
+    font-family: "TrebuchetMS";
+    font-size: 18px;
+    line-height: 21px;
+    color: #f65b4f;
+    display: block;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #f6bdb3; }
+    .redMenu__link:hover {
+      border-bottom: 1px solid transparent; }
+
+.column_left {
+  float: left;
+  width: 255px;
+  margin-bottom: 20px; }
+
+.column_right {
+  float: right;
+  width: 245px; }
+
+.text-info {
+  margin-bottom: 25px;
+  position: relative;
+  z-index: 2; }
+  .text-info__title {
+    font-family: "GillSans-SemiBold";
+    margin-bottom: 15px; }
+  .text-info__text {
+    margin-bottom: 15px; }
+    .text-info__text_min {
+      width: 190px;
+      margin-top: -70px; }
+  .text-info__img {
+    margin-left: -91px; }
+  .text-info__link {
+    color: #008de5;
+    display: inline-block;
+    margin-top: 1px;
+    border-bottom: 1px solid #008de5; }
+    .text-info__link:hover {
+      border-bottom: 1px solid transparent; }
+
+@media screen and (max-width: 1255px) {
+  .content__img {
+    max-width: 515px;
+    bottom: 25px;
+    margin-left: -276px; }
+  .wrapp {
+    padding: 0 5px; } }

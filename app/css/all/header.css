@@ -1,0 +1,40 @@
+.header {
+  padding: 22px 0 20px;
+  border-bottom: 1px solid #cbcbcb;
+  text-align: center; }
+
+.logo {
+  display: inline-block;
+  vertical-align: top;
+  float: left; }
+  .logo__img {
+    max-width: 181px; }
+
+.contacts {
+  float: right;
+  font-family: "TrebuchetMS";
+  width: 165px;
+  text-align: left; }
+  .contacts__phone {
+    font-size: 22px;
+    line-height: 25px;
+    padding-bottom: 3px; }
+
+.menu {
+  color: #008ee5;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 15px; }
+  .menu__item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px; }
+  .menu__link {
+    font-family: "TrebuchetMS";
+    font-size: 18px;
+    line-height: 21px;
+    display: block;
+    padding-bottom: 2px;
+    border-bottom: 1px solid #b9dbea; }
+    .menu__link:hover {
+      border-bottom: 1px solid transparent; }
