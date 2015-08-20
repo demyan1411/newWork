@@ -38,7 +38,7 @@ body {
   min-height: 100%;
   box-sizing: border-box;
   background: #f7f6ed;
-  min-width: 990px;
+  min-width: 1000px;
   overflow: hidden; }
 
 .main-content__wrapper {
@@ -47,7 +47,7 @@ body {
 
 .wrapp {
   max-width: 1250px;
-  min-width: 990px;
+  min-width: 1000px;
   margin: 0 auto;
   padding: 0 15px;
   position: relative;

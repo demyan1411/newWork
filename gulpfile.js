@@ -65,7 +65,7 @@ gulp.task('scss_oldIe', function() {
 
 gulp.task('server', ['jade', 'scss', 'scss_oldIe'], function () {
 	browserSync({
-		open: false,
+		// open: false,
 		notify: false,
 		port: 9000,
 		server: {
@@ -151,6 +151,7 @@ gulp.task('images', function () {
 gulp.task('extras', function () {
 	return gulp.src([
 		'app/*.*',
+		'app/.htaccess',
 		'!app/*.html'
 	]).pipe(gulp.dest('dist'));
 });

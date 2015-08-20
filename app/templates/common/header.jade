@@ -1,17 +1,21 @@
 header.header
 	.wrapp
-		a(href="").logo
-			img(src="img/logo.png", alt="logo").logo__img
+
+		block logo
+			a(href="index.html").logo
+				img(src="img/logo.png", alt="logo").logo__img
+
 		address.contacts
 			a(href="tel:+74957990371").contacts__phone +7 495 799 0371
 			.contacts__addr 109387, г. Москва, ул. Тихая, д. 33, стр. 1
-		ul.menu
-			li.menu__item
-				a(href="").menu__link О компании
-			li.menu__item
-				a(href="").menu__link Технология
-			li.menu__item
-				a(href="").menu__link Услуги
-			li.menu__item
-				a(href="").menu__link Контакты
 
+		block menu
+		-var menu = { 'О компании': 'about.html', 'Технология': 'technology.html', 'Услуги': 'servises.html', 'Контакты': 'contacts.html' }
+		ul.menu
+			each val, key in menu
+				if selected === key
+					li.menu__item
+						a.menu__link.menu__link_active(href=val)= key
+				else
+					li.menu__item
+						a.menu__link(href=val)= key

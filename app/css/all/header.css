@@ -21,7 +21,6 @@
     padding-bottom: 3px; }
 
 .menu {
-  color: #008ee5;
   display: inline-block;
   vertical-align: top;
   margin-top: 15px; }
@@ -30,6 +29,7 @@
     vertical-align: top;
     margin: 0 20px; }
   .menu__link {
+    color: #008ee5;
     font-family: "TrebuchetMS";
     font-size: 18px;
     line-height: 21px;
@@ -37,4 +37,10 @@
     padding-bottom: 2px;
     border-bottom: 1px solid #b9dbea; }
     .menu__link:hover {
+      color: #de5b4e;
+      border-bottom: 1px solid #de5b4e; }
+    .menu__link_active {
+      color: #de5b4e;
       border-bottom: 1px solid transparent; }
+      .menu__link_active:hover {
+        border-bottom: 1px solid transparent; }

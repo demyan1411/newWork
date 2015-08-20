@@ -28,7 +28,6 @@
 	}
 }
 .menu {
-	color: #008ee5;
 	@include inlineBlock;
 	margin-top: 15px;
 
@@ -37,6 +36,7 @@
 		margin: 0 20px;
 	}
 	&__link {
+		color: #008ee5;
 		font-family: $fontTreb;
 		font-size: 18px;
 		line-height: 21px;
@@ -45,7 +45,16 @@
 		border-bottom: 1px solid #b9dbea;
 
 		&:hover {
+			color: #de5b4e;
+			border-bottom: 1px solid #de5b4e;
+		}
+
+		&_active {
+			color: #de5b4e;
 			border-bottom: 1px solid transparent;
+			&:hover {
+				border-bottom: 1px solid transparent;
+			}
 		}
 	}
 }
