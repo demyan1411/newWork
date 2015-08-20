@@ -101,7 +101,8 @@
 @media screen and (max-width: 1255px) {
   .content__img {
     bottom: 89px;
-    margin-left: -265px; }
+    margin-left: -265px;
+    width: 506px; }
   .content__img_block {
     max-width: 540px; }
   .wrapp {

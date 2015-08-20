@@ -30,7 +30,11 @@ gulp.task('jade', function () {
 	.pipe(reload({stream: true}));
 });
 
-gulp.task('scss', function() {
+gulp.task('clean-css', function() {
+	return gulp.src('app/css/**.*')
+		.pipe(clean());
+});
+gulp.task('scss', ['clean-css'], function() {
 	gulp.src('app/scss/*.scss')
 		.pipe(sass({
 			noCache: true,
@@ -96,7 +100,7 @@ gulp.task('watch', function () {
 	gulp.watch('bower.json', ['wiredep']);
 	gulp.watch([
 		'app/js/**/*.js',
-		'app/css/*.css',
+		'app/css/main.css',
 		'app/*.html'
 	]).on('change', reload);
 });

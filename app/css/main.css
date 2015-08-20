@@ -380,6 +380,7 @@ body {
   .content__img {
     bottom: 89px;
     margin-left: -265px;
+    width: 506px;
   }
 
   .content__img_block {

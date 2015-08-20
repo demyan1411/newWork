@@ -129,10 +129,17 @@
 	width: 460px;
 	margin-left: 10px;
 }
+// @media screen and (max-width:1300px) {
+// 	.content__img {
+// 		background: red;
+// 	}
+
+// }
 @media screen and (max-width:1255px) {
 	.content__img {
 		bottom: 89px;
 		margin-left: -265px;
+		width: 506px;
 	}
 	.content__img_block {
 		max-width: 540px;
